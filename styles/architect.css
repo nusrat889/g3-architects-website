@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,500;0,700;1,800&display=swap');
+.text-light-gray{
+    color: #727272;
+}
 .btn-primary{
     border-radius: 8px;
     color: #FFF;
@@ -49,35 +52,15 @@ nav li a{
     font-weight: 700;
     color: #131313;
 }
-.banner-description{
-    color:#727272 ;
-}
+
 .banner img{
     margin-top: 20px;
     width: 100%;
 }
-@media screen and(max-width:567px){
 
-    header{
-        padding: 20px;
-    }
-    nav{
-        flex-direction: column;
-    }
-}
-@media screen and(min-width:576px) and(max-width:960px){
-    header{
-        padding: 20px;
-    }
-    
-    nav{
-        flex-direction: column;
-
-    }
-}
 main{
     max-width: 1440px;
-    margin:0 auto;
+    margin:70px auto;
 }
 .teams-container{
     display: flex;
@@ -103,3 +86,38 @@ main{
     color: #FF900E;
     font-weight: 700;
  }
+ 
+ 
+ 
+ 
+ 
+ @media screen and(max-width:567px){
+
+    header{
+        padding: 20px;
+    }
+    nav ,
+    .teams-container
+    {
+        flex-direction: column;
+    }
+    .teams-img-container{
+        grid-template-columns: 1fr;
+    }
+    .teams-content{
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+}
+@media screen and(min-width:576px) and(max-width:960px){
+    header{
+        padding: 20px;
+    }
+    
+    nav,
+    .teams-container
+    {
+        flex-direction: column;
+
+    }
+}
